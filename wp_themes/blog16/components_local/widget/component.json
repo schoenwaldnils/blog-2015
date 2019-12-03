@@ -1,0 +1,11 @@
+{
+  "name": "widget",
+  "repository": "factorial-io/widget",
+  "version": "0.0.0",
+  "styles": ["widget.css"],
+  "scripts": [],
+  "templates": [],
+  "dependencies": {
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,93 @@
+/**
+ * Theme definition
+ *
+ * This defines the theme in fundamental terms, but not how it is applied to
+ * the components. That is done in `theme-map.css`.
+ */
+
+/**
+ * Breakpoints
+ */
+
+@custom-media --xs-viewport (min-width: 320px);
+@custom-media --sm-viewport (min-width: 580px);
+@custom-media --md-viewport (min-width: 768px);
+@custom-media --lg-viewport (min-width: 1024px);
+@custom-media --xl-viewport (min-width: 1280px);
+
+
+:root{
+
+  /**
+   * Urls
+   */
+
+  --Url-theme: /sites/all/themes/##themeName##;
+  --Url-svg: var(--Url-theme)/assets/images/svg_sprite;
+
+  /**
+   * Colors
+   */
+
+  --color-red:            #ba3e48;
+  --color-red-dark:       #800813;
+
+  --color-green:          #009a31;
+  --color-green-dark:     #008129;
+
+  --color-white:          #fff;
+  --color-gray-lighter:   #ddd;
+  --color-gray-light:     #ccc;
+  --color-gray:           #aaa;
+  --color-grayer:         #777;
+  --color-gray-dark:      #444;
+  --color-gray-darker:    #222;
+  --color-black:          #000;
+
+  /**
+   * Fonts
+   */
+
+  --font-size: 16px;
+  --font-family: 'PT Sans', sans-serif;
+  --line-height: 1.75;
+
+  --font-size-tera:   30px;
+  --font-size-giga:   26px;
+  --font-size-mega:   24px;
+  --font-size-kilo:   22px;
+  --font-size-hekto:  20px;
+  --font-size-deka:   18px;
+  --font-size-normal: var(--font-size);
+  --font-size-dezi:   14px;
+  --font-size-zenti:  12px;
+  --font-size-milli:  10px;
+  --font-size-micro:   8px;
+  --font-size-nano:    6px;
+
+
+  /**
+   * Spacing
+   */
+
+  --space-small-px:  10px;
+  --space-medium-px: 20px;
+  --space-large-px:  30px;
+
+  /**
+   * Z-Index Scale
+   */
+
+  --z-index-0:    -1;
+  --z-index-1:   100;
+  --z-index-2:   200;
+  --z-index-3:   300;
+  --z-index-4:   400;
+  --z-index-5:   500;
+  --z-index-6:   600;
+  --z-index-7:   700;
+  --z-index-8:   800;
+  --z-index-9:   900;
+  --z-index-10: 1000;
+
+}

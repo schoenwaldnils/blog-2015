@@ -1,0 +1,17 @@
+.sidebar ul {
+    margin: 0;
+    list-style: none;
+    font-size: none;
+}
+
+.widget {
+    padding: 2em;
+    margin-bottom: $grid-gutter-width;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.widget:empty {
+    display: none;
+}

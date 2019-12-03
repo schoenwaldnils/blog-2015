@@ -1,0 +1,52 @@
+.widget {
+    .widget_wysija {
+        margin-bottom: 0;
+    }
+    
+    .wysija-paragraph {
+        margin-bottom: 1em;
+    }
+    
+    .wysija-input {
+        border: none;
+        background: $lighter-grey;
+        font-size: .8em;
+        padding: .6em 1.2em;
+        line-height: 1.8em;
+        width: 100%;
+        @include border-radius(.3em);
+    }
+    
+    .wysija-submit {
+        border: none;
+        margin: 0 auto;
+        background: $greyer;
+        color: $white;
+        padding: 0 .75em;
+        line-height: 2.5em;
+        font-size: 1.5em;
+        @include border-radius(.25em);
+        box-shadow: 0 .25em 0 0 $dark-grey;
+
+        
+        &:hover {
+            background: $the-red;
+            box-shadow: 0 .25em 0 0 $the-darker-red;
+        }
+    }
+    
+    .formError {
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        
+        & .formErrorContent {
+            width: auto;
+            @include border-radius(.3em);
+            margin-bottom: .5em;
+            border: none;
+            font-family: inherit;
+            background: $the-red;
+        }
+    }
+}

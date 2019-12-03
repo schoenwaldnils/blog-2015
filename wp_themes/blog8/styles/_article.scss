@@ -1,0 +1,84 @@
+article {
+    padding: 3em;
+    margin-bottom: 3em;
+}
+
+.aticle-meta {
+    font-size: 1.5em;
+    padding: .5em 0;
+    margin-bottom: 1.5em;
+    border-top: 1px solid $light-grey;
+    border-bottom: 1px solid $light-grey;
+}
+
+.meta-left {
+    float: left;
+}
+
+.meta-right {
+    float: right;
+    text-align: right;
+    margin-left: 1em;
+}
+
+.icon-calendar:before, 
+.icon-user:before, 
+.icon-tag:before {
+    margin-right: .5em;
+}
+
+.icon-calendar {
+    margin-right: 1em;
+}
+
+.icon-tag:before {
+    color: $the-red;
+}
+
+.aticle-meta:after {
+    display: table;
+    content: ' ';
+    clear: both; 
+}
+
+@media screen and ( max-width: 600px )
+{
+    .meta-left, .meta-left a, .meta-right {
+        display: block;
+        float: none;
+        text-align: left;
+    }
+    
+    .meta-right {
+        margin-left: 0;
+    }
+}
+
+
+
+.post-banner {
+    display: block;
+    margin: 0 -3.5em 2em;
+    padding: 0;
+}
+
+.post-banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.more-link {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 1.1em .6em .15em 1.15em;
+    background: $greyer;
+    color: $white;
+    @include border-radius(5em 0 0 0);
+    
+    &:hover {
+        background: $the-red;
+        color: $white;
+    }
+}

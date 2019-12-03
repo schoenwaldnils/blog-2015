@@ -1,0 +1,162 @@
+
+a {
+  color: var(--link-color-base);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-color-base-hover);
+}
+
+/*a:visited {
+  color: var(--link-color-base-visited);
+}*/
+
+
+/*
+ * Font-colors
+ */
+
+@each $name, $color in (Red, RedDark, Green, GreenDark, White, GrayLighter, GrayLight, Gray, Grayer, GrayDark, GrayDarker, Black), (red, red-dark, green, green-dark, white, gray-lighter, gray-light, gray, grayer, gray-dark, gray-darker, black) {
+  .u-color$(name) {
+    color: var(--color-$(color)) !important;
+  }
+}
+
+/*
+ * Font-cases
+ */
+
+.u-textUppercase {
+  text-transform: uppercase !important;
+}
+
+.u-textSmallCaps {
+  font-variant: small-caps !important;
+}
+
+/*
+ * Font Families
+ */
+
+.u-fontPTSans {
+  font-family: 'PT Sans', serif;
+}
+
+.u-fontRaleway {
+  font-family: 'Raleway', serif;
+}
+
+.u-fontSanchez {
+  font-family: 'Sanchez', serif;
+}
+
+/*
+ * Headlines
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Sanchez', serif;
+  font-weight: normal;
+}
+
+h1,
+.u-richText h1 {
+  font-size: var(--font-size-tera);
+}
+
+h2,
+.u-richText h2 {
+  font-size: var(--font-size-giga);
+}
+
+h3,
+.u-richText h3 {
+  font-size: var(--font-size-mega);
+}
+
+h4,
+.u-richText h4 {
+  font-size: var(--font-size-kilo);
+}
+
+h5,
+.u-richText h5 {
+  font-size: var(--font-size-hekto);
+}
+
+h6,
+.u-richText h6 {
+  font-size: var(--font-size-deka);
+}
+
+small,
+.u-richText small {
+  font-size: var(--font-size-micro);
+  line-height: 1.715;
+}
+
+.u-richText h1 {
+  margin-bottom: .4em;
+}
+
+.u-richText h2 {
+  margin-bottom: .5em;
+}
+
+.u-richText h3 {
+  margin-bottom: .67em;
+}
+
+.u-richText h4 {
+  margin-bottom: 1em;
+}
+
+.u-richText h5 {
+  margin-bottom: 1.15em;
+}
+
+.u-richText h6 {
+  margin-bottom: 1.3em;
+}
+
+.u-richText small {
+  margin-bottom: 1.715em;
+}
+
+@each $name, $size, $lineheight in (Tera, Giga, Mega, Kilo, Hekto, Deka, Normal, Dezi, Zenti, Milli), (tera, giga, mega, kilo, hekto, deka, normal, dezi, zenti, milli), (1.2, 1.2, 1.3, 1, 1.5, 1.3, inherit, inherit, inherit, inherit) {
+  .u-font$(name) {
+    font-size: var(--font-size-$(size)) !important;
+    line-height: $(lineheight) !important;
+  }
+}
+
+@each $query in xs, sm, md, lg, xl {
+  @media (--$(query)-viewport) {
+    @each $name, $size, $lineheight in (Tera, Giga, Mega, Kilo, Hekto, Deka, Normal, Dezi, Zenti, Milli, Micro, Nano), (tera, giga, mega, kilo, hekto, deka, normal, dezi, zenti, milli, micro, nano), (1.2, 1.2, 1.3, 1, 1.5, 1.3, inherit, inherit, inherit, inherit) {
+      .u-$(query)-font$(name) {
+        font-size: var(--font-size-$(size)) !important;
+        line-height: $(lineheight) !important;
+      }
+    }
+  }
+}
+
+/*
+ * RichText
+ */
+
+.u-richText p:not(:last-child),
+.u-richText ul:not(:last-child),
+.u-richText ol:not(:last-child),
+.u-richText blockquote:not(:last-child),
+.u-richText pre:not(:last-child),
+.u-richText label:not(:last-child) {
+  margin-bottom: 1em;
+}
+

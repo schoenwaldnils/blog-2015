@@ -1,0 +1,64 @@
+/*
+ * Shame CSS: for the stuff that didn't fit anywhere else.
+ */
+
+
+.tiny_coffee {
+  margin-bottom: 0 !important;
+}
+
+.tiny_coffee .modal-body {
+  padding: 0;
+}
+
+.tiny_coffee_text {
+  margin-bottom: 1em;
+}
+
+.tiny_coffee_form {
+  margin-bottom: 0;
+}
+
+.tiny_coffee_widget .noUi-target {
+  height: 10px;
+  border: none;
+  background: var(--color-gray-light);
+  box-shadow: none;
+  border-radius: 9999px;
+}
+
+.tiny_coffee_widget .noUi-handle {
+  width: 20px;
+  height: 20px;
+  left: -10px;
+  top: -5px;
+  border: none;
+  box-shadow: none;
+  background: var(--color-red);
+  border-radius: 9999px;
+}
+
+.tiny_coffee_widget .noUi-handle:before,
+.tiny_coffee_widget .noUi-handle:after {
+  content: none;
+}
+
+.tiny_coffee .tiny_coffee_form button {
+  width: 100%;
+  background: var(--color-grayer);
+  border-radius: 3px;
+  box-shadow: 0 2px 0 0 var(--color-gray-dark);
+}
+
+.tiny_coffee .tiny_coffee_form button:hover {
+  background: var(--color-green);
+  box-shadow: 0 2px 0 0 var(--color-green-dark);
+}
+
+
+
+#disqus_thread {
+  padding: 30px;
+  background-color: var(--color-white);
+  border-bottom: 3px solid var(--color-gray);
+}

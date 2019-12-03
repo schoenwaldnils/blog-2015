@@ -1,0 +1,16 @@
+{
+  "name": "article",
+  "repository": "factorial-io/article",
+  "version": "0.0.0",
+  "styles": ["article.css"],
+  "scripts": [],
+  "templates": ["article.tpl.haml"],
+  "dependencies": {
+  },
+  "license": "MIT",
+  "backend": {
+    "template": "article.tpl.haml",
+    "fixture": {},
+    "options": {}
+  }
+}

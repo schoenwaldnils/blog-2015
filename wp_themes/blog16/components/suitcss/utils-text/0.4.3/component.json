@@ -1,0 +1,14 @@
+{
+  "name": "suitcss-utils-text",
+  "version": "0.4.3",
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+    "lib/text.css"
+  ],
+  "author": "Nicolas Gallagher",
+  "license": "MIT",
+  "repository": "suitcss/utils-text",
+  "resolved": "1e6251d80505cd3815cad7fbbcabd6f01fc87f49"
+}

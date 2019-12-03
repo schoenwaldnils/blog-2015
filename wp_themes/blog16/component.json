@@ -1,0 +1,46 @@
+{
+  "name": "blog16",
+  "description": "",
+  "repo": "factorial-io/blog16",
+  "version": "0.0.0",
+  "styles": [
+    "./assets/styles/theme.css",
+    "./assets/styles/theme-map.css",
+    "./assets/styles/base.css",
+    "./assets/styles/typography.css",
+    "./assets/styles/layout.css",
+    "./assets/styles/shame.css"
+  ],
+  "scripts": [
+    "./assets/scripts/main.js"
+  ],
+  "paths": [
+    "components",
+    "components_local"
+  ],
+  "locals": [
+    "icon",
+    "svg",
+    "header",
+    "article",
+    "footer",
+    "widget"
+  ],
+  "dependencies": {
+    "components/jquery": "*",
+    "components/jqueryui": "*",
+    "suitcss/base": "0.8.0",
+    "suitcss/utils-link": "*",
+    "suitcss/utils-size": "*",
+    "suitcss/utils-text": "*",
+    "suitcss/utils-layout": "*",
+    "suitcss/utils-display": "*",
+    "suitcss/utils-position": "*",
+    "suitcss/utils-offset": "*",
+    "suitcss/components-button": "*",
+    "suitcss/components-grid": "*",
+    "suitcss/components-flex-embed": "*",
+    "factorial-io/components-arrange": "*"
+  },
+  "license": "MIT"
+}

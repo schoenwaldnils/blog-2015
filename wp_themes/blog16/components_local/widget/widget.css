@@ -1,0 +1,15 @@
+/** @define Widget; use strict */
+
+:root {
+  --Widget-variable: 0;
+}
+
+.Widget {
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.Widget:not(:last-child) {
+  margin-bottom: 26px;
+}

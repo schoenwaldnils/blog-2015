@@ -1,0 +1,18 @@
+{
+  "name": "footer",
+  "repository": "factorial-io/footer",
+  "version": "0.0.0",
+  "styles": ["footer.css"],
+  "scripts": ["footer.js"],
+  "templates": ["footer.tpl.haml"],
+  "dependencies": {
+    "components/jquery": "*",
+    "components/jqueryui": "*"
+  },
+  "license": "MIT",
+  "backend": {
+    "template": "footer.tpl.haml",
+    "fixture": {},
+    "options": {}
+  }
+}

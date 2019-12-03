@@ -1,0 +1,43 @@
+{
+    "debug": false,
+    "lintScripts": false,
+    "preprocessorLocations": [
+        "styles"
+    ],
+    "preprocessorScriptOutput": "js",
+    "preprocessorStyleOutput": "",
+    "projectName": "Blog8",
+    "projectDescription": "Project Description",
+    "publishedId": null,
+    "serverHostname": "local.rw.de",
+    "serverPort": null,
+    "templateDirectory": "templates",
+    "templateDefaultLayout": "layout",
+    "templateDefaultPage": "index",
+    "type": "simple",
+    "useCompass": false,
+    "simpleModePartnerServer": "local.rw.de",
+    "simpleModeFileTypes": null,
+    "modelSource": null,
+    "domain": null,
+    "followLeader": true,
+    "routes": null,
+    "customRuby": false,
+    "customRubyPath": null,
+    "remoteDebugPort": 0,
+    "optimiseImages": true,
+    "password": null,
+    "ignoreDir": [
+        "ignore"
+    ],
+    "customTodos": null,
+    "autoPrefixer": null,
+    "sass": null,
+    "sitemap": false,
+    "less": null,
+    "convertHtml": {
+        "extension": ".html",
+        "path": null,
+        "relativePath": false
+    }
+}

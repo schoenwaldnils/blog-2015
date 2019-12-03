@@ -1,0 +1,11 @@
+{
+  "name": "suitcss-components-grid",
+  "version": "2.0.2",
+  "styles": [
+    "lib/grid.css"
+  ],
+  "author": "Nicolas Gallagher",
+  "license": "MIT",
+  "repository": "suitcss/components-grid",
+  "resolved": "1c91575e52573dfcc307309c34c3a63a8e888655"
+}

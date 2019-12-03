@@ -1,0 +1,44 @@
+//tiny coffee//
+
+.widget {
+    .tiny_coffee {
+        margin-bottom: 0 !important;
+    }
+
+    .tiny_coffee .modal-body {
+        padding: 0;
+    }
+
+    .tiny_coffee_form {
+        margin-bottom: 0;
+    }
+
+    .tiny_coffee_widget .noUi-target {
+        height: 1em;
+        border: none;
+        background: $light-grey;
+        box-shadow: none;
+        @include border-radius(1em);
+    }
+
+    .tiny_coffee_widget .noUi-handle {
+        width: 2em;
+        height: 2em;
+        left: -1em;
+        top: -.5em;
+        border: none;
+        box-shadow: none;
+        background: $the-red;
+        @include border-radius(1em);
+    }
+
+    .tiny_coffee_widget .noUi-handle:before,
+    .tiny_coffee_widget .noUi-handle:after {
+        content: none;
+    }
+
+    .tiny_coffee .tiny_coffee_form button {
+        width: 100%;
+        @include border-radius(.3em);
+    }
+}

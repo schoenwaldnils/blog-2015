@@ -1,0 +1,14 @@
+{
+  "name": "suitcss-utils-layout",
+  "version": "0.4.2",
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+    "lib/layout.css"
+  ],
+  "author": "Nicolas Gallagher",
+  "license": "MIT",
+  "repository": "suitcss/utils-layout",
+  "resolved": "a15160b36ef0b43c144179ccb981b42de5cba4ae"
+}

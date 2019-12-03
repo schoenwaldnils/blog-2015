@@ -1,0 +1,27 @@
+%article.Article.l-contentBox.l-paddingVertical30.l-marginBottom30.u-posRelative
+  .l-paddingHorizontal30
+    %h1.Article-title
+      %a{:href => the_permalink(), :title => the_title()}
+        - the_title()
+    - if (!is_404())
+      .Article-meta.l-marginBottom20.u-colorRed.u-fontDezi
+        .Arrange
+          .Arrange-sizeFit
+            %a.Article-time.u-textNoWrap{:href => get_month_link(get_the_time('Y'), get_the_time('m')), :title => get_the_date('Y-m')}
+              %time{:datetime => get_the_date('Y-m-d')}
+                .Icon.Icon--calendar
+                = get_the_date()
+          .Arrange-sizeFit
+            %a.Article-author.u-textNoWrap{:href => the_author_twitter_url(), :title => the_author(), :rel => "author", :target => "_blank"}
+              .Icon.Icon--user
+              - the_author()
+          - if (has_tag())
+            .Arrange-sizeFill.u-textRight
+              .Icon.Icon--tag
+              - the_tags('')
+  - if (has_post_thumbnail())
+    %a.Article-banner.u-block{:href => the_permalink(), :title => the_title()}
+      %figure
+        - the_post_thumbnail('post-banner')
+  .l-paddingHorizontal30.u-richText
+    - the_content('<span class="icon-arrow-right"></span>')

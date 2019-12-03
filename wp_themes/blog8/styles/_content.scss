@@ -1,0 +1,9 @@
+.content, #disqus_thread {
+    position: relative;
+    background: $white;
+    border-bottom: .35em solid $grey;    
+}
+
+@import "article";
+@import "comment";
+@import "sidebar";

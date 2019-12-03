@@ -1,0 +1,13 @@
+{
+  "name": "suitcss-utils-position",
+  "version": "0.2.2",
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+    "lib/position.css"
+  ],
+  "license": "MIT",
+  "repository": "suitcss/utils-position",
+  "resolved": "d5980d5790ab0c93e55528214500bcdf2d1c5bf8"
+}

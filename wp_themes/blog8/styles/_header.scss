@@ -1,0 +1,69 @@
+header {
+    padding: 1.5em;
+    margin-bottom: 8em;
+    background: $dark-grey;
+}
+
+.header--logo {
+    display: block;
+    position: relative; 
+    height: 10em;
+    width: 10em;
+    margin-top: 1em;
+    margin-bottom: -7em;
+    padding: .75em;
+    @include border-radius(5em);
+    background: $white;
+    @include transition(0);
+    
+    background-image: url('media/logo.png');
+    background-image: url('media/logo.svg');
+    background-repeat: no-repeat;    
+    background-position: center;
+    background-size: 84% auto;
+}   
+
+ .header--logo:hover {
+	@include transform(rotate(360deg));
+    @include transition(250ms);
+}
+    
+.header--logo svg {
+    position: absolute;
+    top: 50%;
+    margin-top: -28px;
+}
+
+.header--blog-name {
+    font-family: 'Raleway', sans-serif; 
+    font-weight: normal;
+    color: $white;
+    font-size: 3em;
+    line-height: 1.5em;
+}
+
+header a:hover, header a:focus {
+    color: $white;
+}
+
+@media screen and ( max-width: 767px )
+{
+    header {
+        margin-bottom: 2em;
+    }
+
+    .header--logo {
+        display: block;
+        margin: 1em auto;
+    }
+
+    .header--logo:hover {
+        box-shadow: 0 0 0 1em $dark-grey, 0 0 0 1.35em $white;
+    }
+    
+    .header--blog-name {
+        display: block;
+        margin: .5em auto;
+        text-align: center;
+    }
+}

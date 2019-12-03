@@ -1,0 +1,30 @@
+- get_header()
+
+-# Your content here:
+
+-# global $shortcode_tags;
+-# %pre
+  - print_r($shortcode_tags)
+
+.l-maxWidth.l-marginBottom30
+  %section.Grid.Grid--withGutter
+    .Grid-cell.u-sm-size2of3
+      - if (is_tag())
+        %h1.Tag.u-fontTera.l-contentBox.l-padding30.l-marginBottom20
+          - single_tag_title(_e('Tag: ','blog16'), true)
+      - else if (is_archive())
+        %h1.Tag.u-fontTera.l-contentBox.l-padding30.l-marginBottom20
+          - post_type_archive_title(_e('Archive: ','blog16'), true)
+      - if (have_posts())
+        - while (have_posts())
+          - the_post()
+          = component('article')
+        - if ( comments_open() || get_comments_number() )
+          - comments_template()
+    .Grid-cell.u-sm-size1of3
+      - get_sidebar()
+
+-# End of your content
+
+- get_footer()
+

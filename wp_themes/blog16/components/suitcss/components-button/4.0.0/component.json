@@ -1,0 +1,11 @@
+{
+  "name": "suitcss-components-button",
+  "version": "4.0.0",
+  "styles": [
+    "lib/button.css"
+  ],
+  "author": "Nicolas Gallagher",
+  "license": "MIT",
+  "repository": "suitcss/components-button",
+  "resolved": "026d0260e15276ce175b325e120a07ad7688ef09"
+}

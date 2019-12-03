@@ -1,0 +1,54 @@
+footer {
+    padding: 4em;
+    margin-top: 5em;
+    background: $dark-grey;
+    text-align: center;
+    font-size: 1.5em;
+    color: $grey;
+    border-top: solid .35em $the-red;
+}
+
+footer a {
+    color: $grey;
+}
+
+footer a:hover, footer a:focus {
+    color: $lighter-grey;
+}
+
+.footer-widget .lang-item,
+.footer-widget .menu li {
+    list-style: none;
+}
+
+.footer-widget .lang-item,
+.footer-widget ul,
+.footer-widget .menu li {
+    font-size: inherit;
+}
+
+.footer-widget ul {
+    margin-bottom: 0;
+}
+
+.footer-widget .lang-item {
+    display: inline-block;
+    margin: 0 .25em;
+}
+
+
+.go-top {
+    display: none;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 1.5em .75em .5em 1.5em;
+    color: $white;
+    background: rgba(186,62,72,.5) ;
+    font-size: 1.2em;
+    @include border-radius(5em 0 0 0);
+    
+    &:hover {
+    background: rgba(186,62,72,.7) ;        
+    }
+}

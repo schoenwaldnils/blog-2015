@@ -1,0 +1,45 @@
+/** @define Article; */
+
+:root {
+  --Article-variable: 0;
+}
+
+.Article {
+
+}
+
+.Article-meta {
+  padding: 10px 0;
+  border-top: 1px solid var(--color-gray-light);
+  border-bottom: 1px solid var(--color-gray-light);
+}
+
+.Article-meta .Icon {
+  margin-right: 5px;
+}
+
+.Article-time {
+  margin-right: 10px;
+}
+
+.Article-banner {
+  margin: 0 -5px 20px;
+}
+
+.Article-more {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 21px 11px 10px 21px;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--color-white);
+  border-radius: 5em 0 0 0;
+  background: var(--color-grayer);
+  transition: background-color 200ms;
+}
+
+.Article-more:hover {
+  background: var(--color-red);
+  color: var(--color-white);
+}

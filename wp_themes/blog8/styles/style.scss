@@ -1,0 +1,50 @@
+@import "mixins";
+
+
+$time: .25s;
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    outline: none;
+}
+
+a { 
+    transition: background $time, color $time;
+}
+
+@import "normalize";
+@import "bootstrap";
+//@import "bootstrap-theme";
+@import "coloring";
+@import "font";
+@import "link";
+//@import "transitions";
+@import "wp-styles";
+
+body {
+    background: $light-grey;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p:empty {
+    display: none;
+}
+
+.row {
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@import "header";
+@import "content";
+@import "footer"; 
+
+@import "plugins";  

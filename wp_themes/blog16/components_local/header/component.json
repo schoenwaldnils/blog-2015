@@ -1,0 +1,16 @@
+{
+  "name": "header",
+  "repository": "factorial-io/header",
+  "version": "0.0.0",
+  "styles": ["header.css"],
+  "scripts": [],
+  "templates": ["header.tpl.haml"],
+  "dependencies": {
+  },
+  "license": "MIT",
+  "backend": {
+    "template": "header.tpl.haml",
+    "fixture": {},
+    "options": {}
+  }
+}

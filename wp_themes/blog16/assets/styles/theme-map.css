@@ -1,0 +1,44 @@
+:root {
+
+  /**
+   * base
+   */
+
+  --background-color: var(--color-gray-light);
+  --text-color: var(--color-gray-dark);
+
+  --link-color-base: var(--color-red);
+  --link-color-base-hover: var(--color-gray-dark);
+  --link-color-base-visited: var(--color-gray-dark);
+
+
+  /**
+   * components-arrange
+   */
+
+  --Arrange-gutter-size: 26px;
+
+  /**
+   * components-grid
+   */
+
+  --Grid-gutter-size: 26px;
+
+  /**
+   * Z-Index Applications
+   */
+
+  --z-drupal-admin:    var(--z-index-10);
+
+  /**
+   * Layout
+   */
+
+
+  /**
+   * Components
+   */
+
+  --Header-background-color: var(--color-gray-dark);
+
+}

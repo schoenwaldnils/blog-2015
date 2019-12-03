@@ -1,0 +1,11 @@
+{
+  "name": "suitcss-components-arrange",
+  "version": "0.6.3",
+  "styles": [
+    "lib/arrange.css"
+  ],
+  "author": "Nicolas Gallagher",
+  "license": "MIT",
+  "repository": "suitcss/components-arrange",
+  "resolved": "54157d718a02270789e73feb0a34ffafdd5b769f"
+}

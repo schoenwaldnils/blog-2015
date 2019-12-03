@@ -1,0 +1,67 @@
+/*
+ * Layout: reusable layout styles.
+ */
+
+.l-circle {
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.l-maxWidth {
+  max-width: 1080px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.l-contentBox {
+  background-color: var(--color-white);
+  border-bottom: 3px solid var(--color-gray);
+}
+
+@each $size in 20, 30 {
+  @each $spacing in padding, margin {
+    @each $name, $direction in (Top, Right, Bottom, Left), (top, right, bottom, left) {
+      .l-$(spacing)$(name)$(size) {
+        $(spacing)-$(direction): $(size)px !important;
+      }
+    }
+    .l-$(spacing)$(size) {
+      $(spacing): $(size)px !important;
+    }
+    .l-$(spacing)Vertical$(size) {
+      $(spacing)-top: $(size)px !important;
+      $(spacing)-bottom: $(size)px !important;
+    }
+    .l-$(spacing)Horizontal$(size) {
+      $(spacing)-right: $(size)px !important;
+      $(spacing)-left: $(size)px !important;
+    }
+  }
+}
+
+@each $query in xs, sm, md, lg, xl {
+  @media (--$(query)-viewport) {
+    @each $size in 20, 30 {
+      @each $spacing in padding, margin {
+        @each $name, $direction in (Top, Right, Bottom, Left), (top, right, bottom, left) {
+          .l-$(query)-$(spacing)$(name)$(size) {
+            $(spacing)-$(direction): $(size)px !important;
+          }
+        }
+        .l-$(query)-$(spacing)$(size) {
+          $(spacing): $(size)px !important;
+        }
+        .l-$(query)-$(spacing)Vertical$(size) {
+          $(spacing)-top: $(size)px !important;
+          $(spacing)-bottom: $(size)px !important;
+        }
+        .l-$(query)-$(spacing)Horizontal$(size) {
+          $(spacing)-right: $(size)px !important;
+          $(spacing)-left: $(size)px !important;
+        }
+      }
+    }
+  }
+}

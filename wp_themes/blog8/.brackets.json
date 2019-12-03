@@ -1,0 +1,21 @@
+{
+    "path": {
+        "styles/style.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "output": "../style.css",
+                "imagePath": null,
+                "sourceComments": "map",
+                "outputStyle": "nested"
+            }
+        },
+        "styles/*.scss": {
+            "sass.enabled": false,
+            "linting.collapsed": false
+        },
+        "styles/bootstrap/*.scss": {
+            "sass.enabled": false,
+            "linting.collapsed": false
+        }
+    }
+}

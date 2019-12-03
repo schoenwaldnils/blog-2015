@@ -1,0 +1,7 @@
+%header.Header
+  .l-maxWidth
+    .Header-wrapLogo
+      %a.Header-logo.u-block{:href => get_option('home'), :title => get_option('blogname')}
+        = component('svg', array('name' => 'logo'))
+    %a.Header-title.u-colorWhite.u-fontTera.u-fontRaleway{:href => get_option('home'), :title => get_option('blogname')}
+      = get_option('blogname')

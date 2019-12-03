@@ -1,0 +1,17 @@
+{
+  "name": "svg",
+  "styles": [
+    "svg.css"
+  ],
+  "scripts": [
+    "svg.js"
+  ],
+  "dependencies": {
+    "factorial-io/svg4everybody": "1.1.0"
+  },
+  "backend": {
+    "template": "svg.tpl.haml",
+    "fixture": {},
+    "options": {}
+  }
+}

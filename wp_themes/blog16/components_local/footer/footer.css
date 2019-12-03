@@ -1,0 +1,65 @@
+/** @define Footer; use strict */
+
+:root {
+  --Footer-variable: 0;
+}
+
+.Footer {
+  color: var(--color-gray);
+  border-top: solid 4px var(--color-red);
+  background: var(--color-gray-dark);
+}
+
+.Footer a {
+  color: var(--color-gray);
+}
+
+.Footer a:hover,
+.Footer a:focus {
+  color: var(--color-gray-lighter);
+}
+
+.Footer-widget .lang-item,
+.Footer-widget .menu li {
+  list-style: none;
+}
+
+.Footer-widget .lang-item,
+.Footer-widget ul,
+.Footer-widget .menu li {
+  font-size: inherit;
+}
+
+.Footer-widget ul {
+  margin-bottom: 0;
+}
+
+.Footer-widget .lang-item {
+  display: inline-block;
+  margin: 0 .25em;
+}
+
+
+.Footer-goTop {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 21px 11px 10px 21px;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--color-white);
+  border-radius: 5em 0 0 0;
+  background: var(--color-red);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 200ms, visibility 200ms;
+}
+
+.Footer-goTop.is-active {
+  visibility: visible;
+  opacity: .5;
+}
+
+.Footer-goTop:hover {
+  opacity: .7;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "suitcss-base",
+  "version": "0.8.0",
+  "styles": [
+    "lib/base.css"
+  ],
+  "dependencies": {
+    "necolas/normalize.css": "3.0.1"
+  },
+  "author": "Nicolas Gallagher",
+  "license": "MIT",
+  "repository": "suitcss/base",
+  "resolved": "88968f60c0fed699c43316cfb8f9cf70546b4520"
+}

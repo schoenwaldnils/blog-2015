@@ -1,0 +1,13 @@
+default:
+  - 'watch'
+dev:
+  - 'componentbuild'
+  - 'postcss'
+production:
+  - 'componentbuild'
+  - 'postcss'
+  - 'uglify'
+  - 'cssmin'
+iconfont:
+  - 'componentbuild'
+  - 'postcss'

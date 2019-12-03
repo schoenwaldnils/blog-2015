@@ -1,0 +1,75 @@
+/** @define Header; use strict */
+
+:root {
+  --Header-background-color: transparent;
+}
+
+.Header {
+  padding: 15px 0;
+  margin-bottom: 2em;
+  background: var(--Header-background-color);
+}
+
+.Header-logo {
+  display: block;
+  position: relative;
+  height: 100px;
+  width: 100px;
+  margin: 10px auto;
+  border-radius: 9999px;
+  background: var(--color-white);
+  transform-origin: 50%, 50%;
+  transition: transform 0ms, box-shadow 200ms;
+}
+
+.Header-logo:hover,
+.Header-logo:focus {
+  box-shadow: 0 0 0 4px var(--color-gray-dark), 0 0 0 6px var(--color-white);
+}
+
+.Header-logo svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.Header-title {
+  display: block;
+  margin: 10px auto 5px;
+  text-align: center;
+}
+
+.Header-title:hover,
+.Header-title:focus {
+  color: var(--color-white);
+}
+
+@media (--sm-viewport) {
+  .Header {
+    margin-bottom: 80px;
+  }
+
+  .Header-wrapLogo {
+    display: table-cell;
+  }
+
+  .Header-logo {
+    margin: 0 0 -100px;
+  }
+
+  .Header-logo:hover {
+    box-shadow: none;
+    transform: rotate(360deg);
+    transition: transform 250ms;
+  }
+
+  .Header-title {
+    display: table-cell;
+    width: 100%;
+    padding: 0 0 0 20px;
+    text-align: left;
+  }
+}

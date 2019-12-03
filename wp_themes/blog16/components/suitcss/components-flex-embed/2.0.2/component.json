@@ -1,0 +1,11 @@
+{
+  "name": "suitcss-components-flex-embed",
+  "version": "2.0.2",
+  "styles": [
+    "lib/flex-embed.css"
+  ],
+  "author": "Nicolas Gallagher",
+  "license": "MIT",
+  "repository": "suitcss/components-flex-embed",
+  "resolved": "69d5456312cbec289bf0ff6e5902dac0f379f44d"
+}

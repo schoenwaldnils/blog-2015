@@ -1,0 +1,14 @@
+{
+  "name": "icon",
+  "repository": "factorial-io/icon",
+  "version": "0.0.0",
+  "styles": [
+    "icons.css",
+    "icon.css"
+  ],
+  "scripts": [],
+  "templates": [],
+  "dependencies": {
+  },
+  "license": "MIT"
+}
